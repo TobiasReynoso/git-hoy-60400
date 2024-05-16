@@ -1,0 +1,17 @@
+body header nav ul li {
+    font-style: none;
+    font-weight: bolder;
+}
+
+.servicio {
+font-family: 'Times New Roman', Times, serif;    
+}
+
+header strong {
+    background-color: blueviolet;
+}
+
+#ofertalaboralh1 {
+    font-weight: bold;
+    color: darkblue;
+}
