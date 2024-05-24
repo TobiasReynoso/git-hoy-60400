@@ -1,7 +1,9 @@
 
-@media only screen and (min-width: 0px) and (max-width: 500px) {
-    body {
-        background-color: #FFF0F5;
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: red;
+        font-size: medium;
     }
 }
 
@@ -93,7 +95,6 @@ body p{
 section div p{
     width: 350px;
     font-size:x-large;
-    font-family: 'Copperplate';
 }
 
 .third-item{
@@ -101,8 +102,8 @@ grid-area: texto-2;
 }
 
 h2{
-    font-family: DancingScript;
-    font-size: 59px;
+    font-family: 'Lucida Bright';
+    font-size: 41px;
 }
 
 .mas-texto{
