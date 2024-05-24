@@ -1,14 +1,4 @@
 
-@font-face {
-    font-family: Copperplate;
-    src: url(./fonts/OPTICopperplate.otf);
-}
-
-@font-face {
-    font-family: DancingScript;
-    src: url(./fonts/DancingScript-Regular.otf);
-}
-
 @media only screen and (min-width: 0px) and (max-width: 500px) {
     body {
         background-color: #FFF0F5;
@@ -142,4 +132,15 @@ footer{
     bottom: 0;
     height: 75px;
     background-color: #ee7550;
+}
+
+.productos-informacion {
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.mapa{
+padding-top: 100px;
+padding-left: 75px;
 }
