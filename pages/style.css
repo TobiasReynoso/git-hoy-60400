@@ -1,9 +1,16 @@
 
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 351px) and (max-width: 500px) {
     body{
-        background-color: red;
-        font-size: medium;
+        background-color: aquamarine;
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body{
+        background-color: aliceblue;
+        font-size: large;
     }
 }
 
@@ -144,4 +151,10 @@ footer{
 .mapa{
 padding-top: 100px;
 padding-left: 75px;
+}
+
+strong{
+    font-size: 200%;
+    position: absolute;
+    top: 50%; right: 50%;
 }
