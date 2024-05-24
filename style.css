@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: Copperplate;
+    src: url(./fonts/OPTICopperplate.otf);
+}
+
 @media only screen and (max-width: 500px) {
     body {
         background-color: #FFF0F5;
@@ -68,17 +73,35 @@ body p{
 .grid-container{
     justify-content: center;
     display: grid;
-    grid-template-rows: 700px 500px;
-    grid-template-columns: 1000px 500px;
+    grid-template-rows: 450px 200px;
+    grid-template-columns: 300px 325px;
     grid-template-areas:
     'imagen texto'
     'texto texto';
 }
 
 .grid-item{ 
-    border: 1px solid black;
+    border: 2px solid black;
+    padding: 2px solid black;
+}
+
+.first-item{
+    justify-content:end;
+    align-content: end;
+    margin: 0; padding: 0;
+}
+
+.second-item{
+    justify-content: end;
+    align-content: end;
+}
+
+.informacion{
+    color: aliceblue;
 }
 
 p{
     font-size: xx-large;
+    font-family: 'Copperplate';
 }
+
