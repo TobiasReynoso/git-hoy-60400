@@ -4,7 +4,12 @@
     src: url(./fonts/OPTICopperplate.otf);
 }
 
-@media only screen and (max-width: 500px) {
+@font-face {
+    font-family: DancingScript;
+    src: url(./fonts/DancingScript-Regular.otf);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
     body {
         background-color: #FFF0F5;
     }
@@ -41,7 +46,6 @@ header img{
     align-content: center;
     color: aliceblue;
     background-color: #ee7550;
-    padding-right: 20px;
 }
 
 nav ul{
@@ -54,16 +58,21 @@ nav ul li a{
     display: inline-block;
     font-family: 'Lucida Bright';
     font-size:x-large;
-    text-align: right;
-    justify-content: left;
-    width: 325px;
+    text-align: center;
+    padding-left: 225px;
     color: aliceblue;
     text-decoration: none;
 }
 
+.enlace-nav:hover{
+    color:gold;
+}
+
 body{
+    position:relative;
+    min-height: 100vh;
     background-color: #a3dee4;
-    margin:0%;
+    margin:0;
 }
 
 body p{
@@ -74,15 +83,10 @@ body p{
     justify-content: center;
     display: grid;
     grid-template-rows: 450px 200px;
-    grid-template-columns: 300px 325px;
+    grid-template-columns: 275px 350px;
     grid-template-areas:
     'imagen texto'
-    'texto texto';
-}
-
-.grid-item{ 
-    border: 2px solid black;
-    padding: 2px solid black;
+    'texto-2 texto-2';
 }
 
 .first-item{
@@ -93,15 +97,49 @@ body p{
 
 .second-item{
     justify-content: end;
-    align-content: end;
+    align-content: center;
 }
 
-.informacion{
-    color: aliceblue;
-}
-
-p{
-    font-size: xx-large;
+section div p{
+    width: 350px;
+    font-size:x-large;
     font-family: 'Copperplate';
 }
 
+.third-item{
+grid-area: texto-2;
+}
+
+h2{
+    font-family: DancingScript;
+    font-size: 59px;
+}
+
+.mas-texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 25px;
+}
+
+.div-mas-texto{
+    display: flex;
+    justify-content: center;
+}
+
+.p2{
+width: 50%;
+font-size:x-large
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    background-color: #ee7550;
+}
