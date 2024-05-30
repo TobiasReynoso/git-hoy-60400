@@ -1,4 +1,12 @@
 
+@import 'html/productos';
+@import 'utilidades/variables';
+@import 'html/reset';
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
 
 @media screen and (min-width: 351px) and (max-width: 500px) {
     body{
@@ -14,17 +22,26 @@
     }
 }
 
+@media screen and (min-width: 500px){
+    body{
+        background-color: $color-principal
+    }
+}
+
 header{ 
-    height: 100px;
-    width: 100%;
+    @include sizes(100%, 100px);
     display: flex;
     position: fixed;
     top: 0%;
-background-color: #ee7550;
+background-color: $color-principal;
 }
 
-header img{
-    height: 100px;
+header {
+    div{
+        img{
+            height: 100px;
+        }
+    }
 }
 
 .logo{
@@ -32,7 +49,7 @@ header img{
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    background-color: #ee7550;
+    background-color: $color-principal;
 }
 
 .nombre-empresa{
@@ -44,23 +61,31 @@ header img{
 .nav-bar{
     align-content: center;
     color: aliceblue;
-    background-color: #ee7550;
+    background-color: $color-principal;
 }
 
-nav ul{
-    display: flex;
-    list-style-type: none;
+nav{
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
 }
 
-nav ul li a{
-    display: flex;
-    display: inline-block;
-    font-family: 'Lucida Bright';
-    font-size:x-large;
-    text-align: center;
-    padding-left: 225px;
-    color: aliceblue;
-    text-decoration: none;
+nav{
+    ul{
+        li{
+            a{
+                display: flex;
+                display: inline-block;
+                font-family: 'Lucida Bright';
+                font-size:x-large;
+                text-align: center;
+                padding-left: 225px;
+                color: aliceblue;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .enlace-nav:hover{
@@ -70,12 +95,14 @@ nav ul li a{
 body{
     position:relative;
     min-height: 100vh;
-    background-color: #a3dee4;
+    background-color: $color-de-fondo;
     margin:0;
 }
 
-body p{
-    font-size: xx-large;
+body {
+    p{
+        font-size: xx-large;
+    }
 }
 
 .grid-container{
@@ -133,13 +160,13 @@ font-size:x-large
 }
 
 footer{
-    width: 100%;
+    @include sizes(100%, 100%);
     display: flex;
     justify-content: right;
     position: absolute;
     bottom: 0;
     height: 75px;
-    background-color: #ee7550;
+    background-color: $color-principal;
 }
 
 .productos-informacion {
