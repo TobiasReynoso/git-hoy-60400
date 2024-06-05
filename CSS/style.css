@@ -137,7 +137,7 @@ footer {
   height: 100%;
   display: flex;
   justify-content: right;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 75px;
   background-color: #ee7550;
