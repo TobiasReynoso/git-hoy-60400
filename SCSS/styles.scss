@@ -187,13 +187,9 @@ strong{
 }
 
 form{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-  }
+    transform: translate(40%, 450px);
+}
 
-  #CV{
-    display: flex;
-    content: 100px;
-  }
+.imagen-de-sabores{
+    transform: translate(500px);
+}
