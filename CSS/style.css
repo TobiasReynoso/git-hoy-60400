@@ -10,7 +10,7 @@
     font-size: large;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
   body {
     background-color: #ee7550;
   }
@@ -30,16 +30,15 @@ header div img {
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: aliceblue;
-  background-color: #ee7550;
 }
 
 .nombre-empresa {
-  padding-left: 10px;
-  padding-right: 10px;
+  transform: translate(10px);
   font-family: "Lucida Bright";
+  font-size: x-large;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .nav-bar {
@@ -58,10 +57,24 @@ nav ul li a {
   display: inline-block;
   font-family: "Lucida Bright";
   font-size: x-large;
-  text-align: center;
-  padding-left: 225px;
   color: aliceblue;
   text-decoration: none;
+}
+
+#enlace-nav-1{
+  transform: translate(275px);
+}
+
+#enlace-nav-2{
+  transform: translate(475px);
+}
+
+#enlace-nav-3{
+  transform: translate(675px);
+}
+
+#enlace-nav-4{
+  transform: translate(875px);
 }
 
 .enlace-nav:hover {
@@ -80,44 +93,47 @@ body p {
 }
 
 .grid-container {
+  transform: translate(0, 125px);
   justify-content: center;
   display: grid;
-  grid-template-rows: 450px 200px;
-  grid-template-columns: 275px 350px;
+  grid-template-rows: 275px 100px;
+  grid-template-columns: 275px 275px;
   grid-template-areas: "imagen texto" "texto-2 texto-2";
 }
 
 .first-item {
-  justify-content: end;
-  align-content: end;
-  margin: 0;
-  padding: 0;
+  align-self: end;
+  justify-self: center;
 }
 
 .second-item {
-  justify-content: end;
-  align-content: center;
+  align-self: end;
+  justify-self: center;
 }
 
 section div p {
-  width: 350px;
   font-size: x-large;
 }
 
 .third-item {
+  justify-self: center;
   grid-area: texto-2;
 }
 
 h2 {
   font-family: "Lucida Bright";
-  font-size: 41px;
+  font-size: 35px;
+}
+
+.section-mas-texto{
+  div{
+    transform: translate(0, 150px);
+  }
 }
 
 .mas-texto {
   display: flex;
-  text-align: center;
   justify-content: center;
-  align-content: center;
   width: 100%;
   margin: 25px;
 }
@@ -128,7 +144,7 @@ h2 {
 }
 
 .p2 {
-  width: 50%;
+  width: 75%;
   font-size: x-large;
 }
 
