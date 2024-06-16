@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="background-color: grey;">
         <div class="logo">
             <img src="../images/images.jpeg" alt="logo-empresa">
             <a href="../index.html" class="nombre-empresa">Coder Ice Cream</a>
@@ -34,14 +34,24 @@
         </nav>
     </header>
 
-    <main>
-        <form action="./form.php" method="post">
-            <input type="file" name="CV" id="CV">
-            <input type="submit" value="Enviar">
-        </form>
+    <main class="container">
+        <div class="row">
+            <p class="col">
+                Mandanos tu currículum, lo evaluaremos y nos comunicaremos al contacto pertinente.
+            </p>
+            <p class="col col-2-0">
+                ¡Mucha suerte!
+            </p>
+        </div>
+        <div>
+            <form action="./form.php" method="post">
+                <input type="file" name="CV" id="CV">
+                <input class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </div>
     </main>
 
-    <footer>
+    <footer style="background-color: grey;">
         <div>
             <p>
                 Todos los derechos reservados.

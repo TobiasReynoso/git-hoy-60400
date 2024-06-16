@@ -1,7 +1,4 @@
-
-@import 'html/productos';
-@import 'utilidades/variables';
-@import 'html/reset';
+@import 'utilidades/variables'
 
 @mixin sizes($width, $height){
     width: $width;
@@ -9,187 +6,194 @@
 }
 
 @media screen and (min-width: 351px) and (max-width: 500px) {
-    body{
-        background-color: aquamarine;
-        font-size: larger;
-    }
+  body {
+    background-color: aquamarine;
+    font-size: larger;
+  }
 }
-
 @media screen and (max-width: 350px) {
-    body{
-        background-color: aliceblue;
-        font-size: large;
-    }
+  body {
+    background-color: aliceblue;
+    font-size: large;
+  }
 }
-
-@media screen and (min-width: 500px){
-    body{
-        background-color: $color-principal
-    }
+@media screen and (min-width: 501px) {
+  body {
+    background-color: $body-bgc;
+  }
 }
-
-header{ 
-    @include sizes(100%, 100px);
-    display: flex;
-    position: fixed;
-    top: 0%;
-background-color: $color-principal;
-}
-
 header {
-    div{
-        img{
-            height: 100px;
-        }
-    }
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  background-color: #ee7550;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    background-color: $color-principal;
+header div img {
+  height: 100px;
 }
 
-.nombre-empresa{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family:'Lucida Bright';
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-bar{
-    align-content: center;
-    color: aliceblue;
-    background-color: $color-principal;
+.nombre-empresa {
+  transform: translate(10px);
+  font-family: "Lucida Bright";
+  font-size: x-large;
+  text-decoration: none;
+  color: aliceblue;
 }
 
-nav{
-    ul{
-        display: flex;
-        list-style-type: none;
-    }
+.nav-bar {
+  align-content: center;
+  color: aliceblue;
 }
 
-nav{
-    ul{
-        li{
-            a{
-                display: flex;
-                display: inline-block;
-                font-family: 'Lucida Bright';
-                font-size:x-large;
-                text-align: center;
-                padding-left: 225px;
-                color: aliceblue;
-                text-decoration: none;
-            }
-        }
-    }
+nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.enlace-nav:hover{
-    color:gold;
+nav ul li a {
+  display: flex;
+  font-family: "Lucida Bright";
+  font-size: x-large;
+  color: aliceblue;
+  text-decoration: none;
 }
 
-body{
-    position:relative;
-    min-height: 100vh;
-    background-color: $color-de-fondo;
-    margin:0;
+#enlace-nav-1{
+  transform: translate(275px);
+}
+
+#enlace-nav-2{
+  transform: translate(475px);
+}
+
+#enlace-nav-3{
+  transform: translate(675px);
+}
+
+#enlace-nav-4{
+  transform: translate(875px);
+}
+
+.enlace-nav:hover {
+  color: gold;
 }
 
 body {
-    p{
-        font-size: xx-large;
-    }
+  position: relative;
+  min-height: 100vh;
+  background-color: #a3dee4;
+  margin: 0;
 }
 
-.grid-container{
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 450px 200px;
-    grid-template-columns: 275px 350px;
-    grid-template-areas:
-    'imagen texto'
-    'texto-2 texto-2';
+body p {
+  font-size: xx-large;
 }
 
-.first-item{
-    justify-content:end;
-    align-content: end;
-    margin: 0; padding: 0;
+.grid-container {
+  transform: translate(0, 125px);
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 275px 100px;
+  grid-template-columns: 275px 275px;
+  grid-template-areas: "imagen texto" "texto-2 texto-2";
 }
 
-.second-item{
-    justify-content: end;
-    align-content: center;
+.first-item {
+  align-self: end;
+  justify-self: center;
 }
 
-section div p{
-    width: 350px;
-    font-size:x-large;
+.second-item {
+  align-self: end;
+  justify-self: center;
 }
 
-.third-item{
-grid-area: texto-2;
+section div p {
+  font-size: x-large;
 }
 
-h2{
-    font-family: 'Lucida Bright';
-    font-size: 41px;
+.third-item {
+  justify-self: center;
+  grid-area: texto-2;
 }
 
-.mas-texto{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    margin: 25px;
+h2 {
+  font-family: "Lucida Bright";
+  font-size: 35px;
 }
 
-.div-mas-texto{
-    display: flex;
-    justify-content: center;
+.section-mas-texto{
+  div{
+    transform: translate(0, 150px);
+  }
 }
 
-.p2{
-width: 50%;
-font-size:x-large
+.mas-texto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 25px;
 }
 
-footer{
-    @include sizes(100%, 100%);
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    bottom: 0;
-    height: 75px;
-    background-color: $color-principal;
+.div-mas-texto {
+  display: flex;
+  justify-content: center;
+}
+
+.p2 {
+  width: 75%;
+  font-size: x-large;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  background-color: #ee7550;
 }
 
 .productos-informacion {
-    text-align: center;
-    width: 100%;
-    padding-top: 100px;
-}
-
-.mapa{
-padding-top: 100px;
-padding-left: 75px;
-}
-
-strong{
-    font-size: 200%;
-    position: absolute;
-    top: 50%; right: 50%;
-}
-
-form{
-    transform: translate(40%, 450px);
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
 }
 
 .imagen-de-sabores{
-    transform: translate(500px);
+  transform: translate(50%);
+}
+
+.mapa {
+  padding-top: 100px;
+  padding-left: 75px;
+}
+
+strong {
+  font-size: 200%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+form{
+  transform: translate(400px, 450px);
+  justify-self: center;
+}
+
+.row{
+  transform: translate(200px, 250px);
+}
+
+.col-2-0{
+  align-self: center;
 }
